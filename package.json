@@ -1,0 +1,38 @@
+{
+  "name": "web-quality-sentinel",
+  "version": "1.0.0",
+  "description": "Automated web quality platform: monitors public websites, tracks flaky tests, and generates Playwright tests.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:a11y": "playwright test --grep @a11y",
+    "test:health": "playwright test --grep @health",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "analyze": "tsx src/dashboard/analyze.ts",
+    "dashboard": "tsx src/dashboard/build.ts",
+    "generate": "tsx src/generator/cli.ts",
+    "notify": "tsx src/dashboard/notify.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@eslint/js": "^9.12.0",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^20.16.5",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.8.0"
+  }
+}

@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Generated dashboard (built in CI, published to Pages)
+/public/
+
+# Env
+.env
+.env.local
+
+# OS / editor
+.DS_Store
+*.log
+.idea/
+.vscode/
+
+# Keep the history directory but ignore nothing inside it by default —
+# run summaries ARE committed so trends persist across CI runs.

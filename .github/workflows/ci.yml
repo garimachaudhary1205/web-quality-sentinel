@@ -1,0 +1,137 @@
+name: CI
+
+# The core quality pipeline for Web Quality Sentinel.
+#
+# It lints and type-checks the codebase, runs the Playwright monitor suite
+# against the configured public sites, publishes the HTML report as an
+# artifact, rebuilds the trends dashboard, persists new run-history JSON back
+# to the repo, and (optionally) pings Discord with a run summary.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  # Daily scheduled monitoring run — this is what turns the suite into a
+  # continuous "sentinel" rather than a one-off CI check.
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+# Least-privilege by default; `contents: write` is required so the scheduled/
+# main runs can commit the updated history/ folder back to the repo.
+permissions:
+  contents: write
+
+# Never let two runs on the same ref clobber each other's history commits.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  # Optional AI key for the generator. It is never required in CI, but we make
+  # it available so any generation step could opt in without further wiring.
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+jobs:
+  quality:
+    name: Lint, type-check, monitor & publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Cache the Playwright browser binaries so we don't re-download ~400MB on
+      # every run. Keyed on the resolved @playwright/test version taken from the
+      # lockfile, so a Playwright upgrade automatically busts the cache.
+      - name: Resolve Playwright version
+        id: pw
+        run: echo "version=$(npm ls @playwright/test --depth=0 --json | node -e 'let d="";process.stdin.on("data",c=>d+=c).on("end",()=>console.log(JSON.parse(d).dependencies["@playwright/test"].version))')" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ steps.pw.outputs.version }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
+      - name: Install Playwright browsers
+        # Always install with OS deps. When the browser binaries are already
+        # cached this is a near-instant no-op for the downloads, but still wires
+        # up the required system libraries on the runner.
+        run: npx playwright install --with-deps
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type-check
+        run: npm run typecheck
+
+      # We monitor real, external public sites. A transient outage or slow
+      # third-party response should NOT fail the whole pipeline (and thus block
+      # publishing the report/history that record the failure). We mark the test
+      # step non-fatal with `continue-on-error` so the reporter still writes its
+      # summary and every downstream publish step runs. The failure is still
+      # visible in the uploaded HTML report and the committed run history.
+      - name: Run Playwright monitor suite
+        id: tests
+        continue-on-error: true
+        run: npm test
+
+      - name: Upload Playwright HTML report
+        # Always publish the report, even when the suite reported failures.
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Build trends dashboard
+        # Reads every history/run-*.json and emits the static site into public/.
+        if: ${{ always() }}
+        run: npm run dashboard
+
+      # Persist the new run-history JSON so trend/flakiness data accumulates
+      # over time. Only on trusted, non-PR events (scheduled runs, pushes to
+      # main, or manual dispatch) — pull requests (especially from forks) must
+      # never push. `[skip ci]` keeps the commit from re-triggering this run.
+      - name: Commit updated run history
+        if: ${{ always() && github.event_name != 'pull_request' }}
+        run: |
+          git config user.name 'web-quality-sentinel[bot]'
+          git config user.email 'web-quality-sentinel[bot]@users.noreply.github.com'
+          git add history
+          if git diff --cached --quiet; then
+            echo 'No new run history to commit.'
+          else
+            git commit -m 'chore: update run history [skip ci]'
+            git push
+          fi
+
+      # Post a run summary to Discord. Guarded so it only runs when the webhook
+      # secret is actually configured (empty secret => skip silently).
+      - name: Notify Discord
+        if: ${{ always() && env.DISCORD_WEBHOOK_URL != '' }}
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: npm run notify
+
+      # Surface the real suite result at the end so the job's status reflects
+      # test health, without having blocked any of the publish steps above.
+      - name: Reflect test outcome
+        if: ${{ always() }}
+        run: |
+          if [ "${{ steps.tests.outcome }}" != "success" ]; then
+            echo "::warning::Monitor suite reported failures (outcome=${{ steps.tests.outcome }}). See the uploaded report."
+          fi

@@ -1,0 +1,101 @@
+{
+  "runId": "sample",
+  "timestamp": "2026-09-24T09:00:00.000Z",
+  "ci": {
+    "isCI": true,
+    "commit": "sample000000deadbeefcafe0000000000000000",
+    "branch": "main",
+    "runUrl": "https://github.com/example/web-quality-sentinel/actions/runs/1"
+  },
+  "totals": {
+    "total": 6,
+    "passed": 4,
+    "failed": 1,
+    "flaky": 1,
+    "skipped": 0
+  },
+  "results": [
+    {
+      "testName": "health.spec.ts > Sauce Demo @health @smoke loads without console errors",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1820,
+      "timestamp": "2026-09-24T09:00:12.000Z",
+      "project": "chromium",
+      "tags": ["@health", "@smoke"]
+    },
+    {
+      "testName": "a11y.spec.ts > Sauce Demo @a11y has no critical accessibility violations",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2450,
+      "timestamp": "2026-09-24T09:00:16.000Z",
+      "project": "chromium",
+      "tags": ["@a11y"],
+      "a11y": {
+        "total": 3,
+        "bySeverity": { "critical": 0, "serious": 1, "moderate": 1, "minor": 1 },
+        "ruleIds": ["color-contrast", "label", "region"]
+      }
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC @health @smoke loads without console errors",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "flaky",
+      "retries": 1,
+      "durationMs": 3120,
+      "timestamp": "2026-09-24T09:00:22.000Z",
+      "project": "firefox",
+      "tags": ["@health", "@smoke"]
+    },
+    {
+      "testName": "a11y.spec.ts > Playwright TodoMVC @a11y has no critical accessibility violations",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1990,
+      "timestamp": "2026-09-24T09:00:27.000Z",
+      "project": "firefox",
+      "tags": ["@a11y"],
+      "a11y": {
+        "total": 1,
+        "bySeverity": { "critical": 0, "serious": 0, "moderate": 1, "minor": 0 },
+        "ruleIds": ["heading-order"]
+      }
+    },
+    {
+      "testName": "links.spec.ts > The Internet (Heroku) @links has no broken links",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 5300,
+      "timestamp": "2026-09-24T09:00:35.000Z",
+      "project": "webkit",
+      "tags": ["@links"],
+      "error": "Expected 0 broken links but found 2: https://the-internet.herokuapp.com/status_codes/500 (500)"
+    },
+    {
+      "testName": "a11y.spec.ts > The Internet (Heroku) @a11y has no critical accessibility violations",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2100,
+      "timestamp": "2026-09-24T09:00:40.000Z",
+      "project": "webkit",
+      "tags": ["@a11y"],
+      "a11y": {
+        "total": 5,
+        "bySeverity": { "critical": 1, "serious": 2, "moderate": 1, "minor": 1 },
+        "ruleIds": ["color-contrast", "image-alt", "link-name", "region"]
+      }
+    }
+  ]
+}
