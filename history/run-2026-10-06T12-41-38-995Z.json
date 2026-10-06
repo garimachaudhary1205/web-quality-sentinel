@@ -1,0 +1,1412 @@
+{
+  "runId": "2026-10-06T12-41-38-995Z",
+  "timestamp": "2026-10-06T12:41:38.995Z",
+  "ci": {
+    "isCI": true,
+    "commit": "2f17f1e9c48e09e5f85437ff82daff07904cf723",
+    "branch": "main",
+    "runUrl": "https://github.com/garimachaudhary1205/web-quality-sentinel/actions/runs/37464991129"
+  },
+  "totals": {
+    "total": 88,
+    "passed": 68,
+    "failed": 17,
+    "flaky": 3,
+    "skipped": 0
+  },
+  "results": [
+    {
+      "testName": "accessibility.spec.ts > Playwright TodoMVC > @a11y accessibility scan",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1413,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 3,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 1,
+          "moderate": 2,
+          "minor": 0
+        },
+        "ruleIds": [
+          "color-contrast",
+          "landmark-one-main",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "accessibility.spec.ts > Sauce Demo > @a11y accessibility scan",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1486,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 2,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 0,
+          "moderate": 2,
+          "minor": 0
+        },
+        "ruleIds": [
+          "page-has-heading-one",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "accessibility.spec.ts > Practice Software Testing > @a11y accessibility scan",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2041,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 3,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 0,
+          "moderate": 3,
+          "minor": 0
+        },
+        "ruleIds": [
+          "landmark-one-main",
+          "page-has-heading-one",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "generated/todomvc-generated.spec.ts > @smoke page loads and renders @health",
+      "site": null,
+      "siteUrl": null,
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 287,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "generated/todomvc-generated.spec.ts > @smoke key buttons are visible",
+      "site": null,
+      "siteUrl": null,
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 276,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@smoke"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @smoke @health page loads successfully",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 342,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health @perf page load performance within budget",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 368,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health @links no broken links on the page",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 374,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health no console errors on load",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 369,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @smoke @health page loads successfully",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 289,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health @perf page load performance within budget",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 262,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health @links no broken links on the page",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 871,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health no console errors on load",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 277,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "accessibility.spec.ts > The Internet (Heroku) > @a11y accessibility scan",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 30345,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@a11y"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @smoke @health page loads successfully",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "flaky",
+      "retries": 1,
+      "durationMs": 757,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health @perf page load performance within budget",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 30363,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@health",
+        "@perf"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health @links no broken links on the page",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 32419,
+      "timestamp": "2026-10-06T12:57:07.896Z",
+      "project": "chromium",
+      "tags": [
+        "@health",
+        "@links"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"domcontentloaded\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health no console errors on load",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "flaky",
+      "retries": 2,
+      "durationMs": 840,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "chromium",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @smoke @health page loads successfully",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 937,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "chromium",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health @perf page load performance within budget",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 598,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "chromium",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health @links no broken links on the page",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1172,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "chromium",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health no console errors on load",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 585,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "chromium",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "accessibility.spec.ts > Sauce Demo > @a11y accessibility scan",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2484,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 2,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 0,
+          "moderate": 2,
+          "minor": 0
+        },
+        "ruleIds": [
+          "page-has-heading-one",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "accessibility.spec.ts > Playwright TodoMVC > @a11y accessibility scan",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1376,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 3,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 1,
+          "moderate": 2,
+          "minor": 0
+        },
+        "ruleIds": [
+          "color-contrast",
+          "landmark-one-main",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "accessibility.spec.ts > Practice Software Testing > @a11y accessibility scan",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 3765,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 4,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 0,
+          "moderate": 3,
+          "minor": 1
+        },
+        "ruleIds": [
+          "empty-heading",
+          "landmark-one-main",
+          "page-has-heading-one",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "generated/todomvc-generated.spec.ts > @smoke page loads and renders @health",
+      "site": null,
+      "siteUrl": null,
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 552,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "generated/todomvc-generated.spec.ts > @smoke key buttons are visible",
+      "site": null,
+      "siteUrl": null,
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 585,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@smoke"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @smoke @health page loads successfully",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 737,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health @perf page load performance within budget",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 583,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health @links no broken links on the page",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 590,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health no console errors on load",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 562,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @smoke @health page loads successfully",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2057,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health @perf page load performance within budget",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 874,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health @links no broken links on the page",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1122,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health no console errors on load",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 505,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "accessibility.spec.ts > The Internet (Heroku) > @a11y accessibility scan",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "flaky",
+      "retries": 2,
+      "durationMs": 2339,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 2,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 0,
+          "moderate": 2,
+          "minor": 0
+        },
+        "ruleIds": [
+          "landmark-one-main",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @smoke @health page loads successfully",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 31250,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@smoke",
+        "@health"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"domcontentloaded\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health @perf page load performance within budget",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 31347,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health",
+        "@perf"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health @links no broken links on the page",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 31312,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health",
+        "@links"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"domcontentloaded\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health no console errors on load",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 31228,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @smoke @health page loads successfully",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2552,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health @perf page load performance within budget",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1147,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health @links no broken links on the page",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1006,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health no console errors on load",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1132,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "firefox",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "accessibility.spec.ts > Sauce Demo > @a11y accessibility scan",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 6071,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 2,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 0,
+          "moderate": 2,
+          "minor": 0
+        },
+        "ruleIds": [
+          "page-has-heading-one",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "accessibility.spec.ts > Playwright TodoMVC > @a11y accessibility scan",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1512,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 3,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 1,
+          "moderate": 2,
+          "minor": 0
+        },
+        "ruleIds": [
+          "color-contrast",
+          "landmark-one-main",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "accessibility.spec.ts > The Internet (Heroku) > @a11y accessibility scan",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 30794,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@a11y"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m"
+    },
+    {
+      "testName": "accessibility.spec.ts > Practice Software Testing > @a11y accessibility scan",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 3229,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 4,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 0,
+          "moderate": 3,
+          "minor": 1
+        },
+        "ruleIds": [
+          "empty-heading",
+          "landmark-one-main",
+          "page-has-heading-one",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "generated/todomvc-generated.spec.ts > @smoke page loads and renders @health",
+      "site": null,
+      "siteUrl": null,
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 672,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "generated/todomvc-generated.spec.ts > @smoke key buttons are visible",
+      "site": null,
+      "siteUrl": null,
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 652,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@smoke"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @smoke @health page loads successfully",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 632,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health @perf page load performance within budget",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 613,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health @links no broken links on the page",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 662,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health no console errors on load",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 650,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @smoke @health page loads successfully",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 755,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health @perf page load performance within budget",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 656,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health @links no broken links on the page",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1096,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health no console errors on load",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 690,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @smoke @health page loads successfully",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 32618,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@smoke",
+        "@health"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"domcontentloaded\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health @perf page load performance within budget",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 32616,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health",
+        "@perf"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health @links no broken links on the page",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 32647,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health",
+        "@links"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"domcontentloaded\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health no console errors on load",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 32708,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @smoke @health page loads successfully",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2298,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health @perf page load performance within budget",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2030,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health @links no broken links on the page",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2300,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health no console errors on load",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 2547,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "webkit",
+      "tags": [
+        "@health"
+      ],
+      "error": "Error: console/page errors on https://practicesoftwaretesting.com: Failed to load resource: the server responded with a status of 401 (Unauthorized) \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m \u001b[32m- Expected - 1\u001b[39m \u001b[31m+ Received + 3\u001b[39m \u001b[32m- Array []\u001b[39m \u001b[31m+ Array [\u001b[39m \u001b[31m+ \"Failed to load resource: the server responded with a status of 401 (Unauthorized)\",\u001b[39m \u001b[31m+ ]\u001b[39m"
+    },
+    {
+      "testName": "accessibility.spec.ts > Sauce Demo > @a11y accessibility scan",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1115,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 2,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 0,
+          "moderate": 2,
+          "minor": 0
+        },
+        "ruleIds": [
+          "page-has-heading-one",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "accessibility.spec.ts > Playwright TodoMVC > @a11y accessibility scan",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 967,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 3,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 1,
+          "moderate": 2,
+          "minor": 0
+        },
+        "ruleIds": [
+          "color-contrast",
+          "landmark-one-main",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "accessibility.spec.ts > Practice Software Testing > @a11y accessibility scan",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2200,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@a11y"
+      ],
+      "a11y": {
+        "total": 4,
+        "bySeverity": {
+          "critical": 0,
+          "serious": 0,
+          "moderate": 3,
+          "minor": 1
+        },
+        "ruleIds": [
+          "empty-heading",
+          "landmark-one-main",
+          "page-has-heading-one",
+          "region"
+        ]
+      }
+    },
+    {
+      "testName": "generated/todomvc-generated.spec.ts > @smoke page loads and renders @health",
+      "site": null,
+      "siteUrl": null,
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 377,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "generated/todomvc-generated.spec.ts > @smoke key buttons are visible",
+      "site": null,
+      "siteUrl": null,
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 370,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@smoke"
+      ]
+    },
+    {
+      "testName": "accessibility.spec.ts > The Internet (Heroku) > @a11y accessibility scan",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 32087,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@a11y"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @smoke @health page loads successfully",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 432,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health @perf page load performance within budget",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 545,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health @links no broken links on the page",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 444,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Sauce Demo > @health no console errors on load",
+      "site": "saucedemo",
+      "siteUrl": "https://www.saucedemo.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 406,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @smoke @health page loads successfully",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 368,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health @perf page load performance within budget",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 318,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health @links no broken links on the page",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 912,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Playwright TodoMVC > @health no console errors on load",
+      "site": "todomvc",
+      "siteUrl": "https://demo.playwright.dev/todomvc",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 310,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @smoke @health page loads successfully",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 30430,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@smoke",
+        "@health"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"domcontentloaded\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health @perf page load performance within budget",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 30475,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health",
+        "@perf"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health @links no broken links on the page",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "failed",
+      "retries": 2,
+      "durationMs": 32237,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health",
+        "@links"
+      ],
+      "error": "TimeoutError: page.goto: Timeout 30000ms exceeded. Call log: \u001b[2m - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"domcontentloaded\"\u001b[22m"
+    },
+    {
+      "testName": "health.spec.ts > The Internet (Heroku) > @health no console errors on load",
+      "site": "the-internet",
+      "siteUrl": "https://the-internet.herokuapp.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 786,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @smoke @health page loads successfully",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1078,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@smoke",
+        "@health"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health @perf page load performance within budget",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 1026,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health",
+        "@perf"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health @links no broken links on the page",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 2080,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health",
+        "@links"
+      ]
+    },
+    {
+      "testName": "health.spec.ts > Practice Software Testing > @health no console errors on load",
+      "site": "practicesoftwaretesting",
+      "siteUrl": "https://practicesoftwaretesting.com",
+      "status": "passed",
+      "retries": 0,
+      "durationMs": 895,
+      "timestamp": "2026-10-06T12:57:07.897Z",
+      "project": "Mobile Chrome",
+      "tags": [
+        "@health"
+      ]
+    }
+  ]
+}
